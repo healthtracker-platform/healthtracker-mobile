@@ -16,7 +16,7 @@ jobs:
         with:
           java-version: 1.8
       - name: Build code for Android
-        run:   npm install -g ionic && ionic capacitor add android
+        run:   npm install -g ionic && npm i -D -E @capacitor/cli && ionic capacitor add android
       - name: Build debug APK
         run: cd android
           && bash ./gradlew assembleDebug --stacktrace
