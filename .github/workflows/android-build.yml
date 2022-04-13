@@ -16,7 +16,7 @@ jobs:
         with:
           java-version: 1.8
       - name: Build code for Android
-        run:  npm install -g @ionic/cli && ionic cordova prepare android
+        run:  npm install -g cordova && npm install -g ionic && ionic cordova prepare android
       - name: Build debug APK
         run: cd platforms/android && bash ./gradlew assembleDebug --stacktrace
       - name: Upload APK
