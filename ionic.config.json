@@ -1,8 +1,7 @@
 {
   "name": "healthtracker-mobile",
   "integrations": {
-    "capacitor": {},
-    "cordova": {}
+    "capacitor": {}
   },
   "type": "angular",
   "id": "dca8e51e"
