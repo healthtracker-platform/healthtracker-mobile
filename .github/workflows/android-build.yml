@@ -18,7 +18,8 @@ jobs:
       - name: Build code for Android
         run:   npm install -g ionic && ionic capacitor add android
       - name: Build debug APK
-        run: cd android && bash ./gradlew assembleDebug --stacktrace
+        run: cd android
+          && bash ./gradlew assembleDebug --stacktrace
       - name: Upload APK
         uses: actions/upload-artifact@v1
         with:
