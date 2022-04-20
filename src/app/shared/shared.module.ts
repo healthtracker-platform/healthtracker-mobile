@@ -1,6 +1,8 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {LoginComponent} from "./components/login.component";
+import {IonicModule} from "@ionic/angular";
 
 
 
@@ -10,9 +12,10 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
   imports: [
     CommonModule,
     FormsModule,
+    IonicModule,
   ],
   declarations: [
-
+    LoginComponent
   ],
   exports: [
     CommonModule,

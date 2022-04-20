@@ -4,7 +4,7 @@ import { PatientPage } from './patient.page';
 
 const routes: Routes = [
   {
-    path: 'patient',
+    path: '',
     component: PatientPage,
     children: [
       {
@@ -28,7 +28,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/patient/tab1',
+    redirectTo: '/tab1',
     pathMatch: 'full'
   }
 ];
