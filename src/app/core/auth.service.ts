@@ -56,6 +56,10 @@ export class AuthService {
     return this.hasRoles([Role.PROFESSIONAL]);
   }
 
+  isPatient(): boolean {
+    return this.hasRoles([Role.PATIENT]);
+  }
+
 
   getEmail(): string {
     return this.user ? this.user.email : undefined;

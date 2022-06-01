@@ -17,7 +17,7 @@ export class LoginComponent {
   login(): void {
     this.auth.login(this.email, this.password).subscribe(
       () => {
-        if (this.auth.isAdmin()) {
+        if (this.auth.isPatient()) {
           this.router.navigate(['patient']);
         }
       }
