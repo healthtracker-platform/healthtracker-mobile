@@ -4,13 +4,13 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import {LoginComponent} from "./shared/components/login.component";
 
 const routes: Routes = [
-  {path: '', pathMatch: 'full', redirectTo: 'app/login'},
+  {path: '', pathMatch: 'full', redirectTo: 'patient/login'},
   {
     path: 'patient',
     loadChildren: () => import('./patient/patient.module').then(m => m.TabsPageModule)
   },
   {
-    path: 'app/login',
+    path: 'patient/login',
     component: LoginComponent,
   }
 
