@@ -1,0 +1,19 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-title>Weight</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="canDismiss()" >Close</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen class="ion-padding">
+  <p>
+    <ion-input matInput placeholder="Weight (Kg)" clearInput  [(ngModel)]="register.value" ></ion-input>
+  </p>
+  <ion-item-divider>
+
+  </ion-item-divider>
+  <ion-button expand="block" (click)="save()" >Save</ion-button>
+
+</ion-content>
+

@@ -11,7 +11,7 @@ import { PatientPage } from './patient.page';
     IonicModule,
     CommonModule,
     FormsModule,
-    TabsPageRoutingModule
+    TabsPageRoutingModule,
   ],
   declarations: [PatientPage]
 })
