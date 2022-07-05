@@ -18,6 +18,8 @@ export class LoginComponent {
     this.auth.login(this.email, this.password).subscribe(
       () => {
         if (this.auth.isPatient()) {
+          this.email="";
+          this.password="";
           this.router.navigate(['patient']);
         }
       }

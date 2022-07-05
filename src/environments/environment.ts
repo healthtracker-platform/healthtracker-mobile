@@ -1,7 +1,7 @@
 export const environment = {
   production: false,
-  REST_USER: 'http://localhost:8081',
-  REST_STANDARIZATION: 'http://localhost:8082',
+  REST_USER: 'https://healthtracker-user.herokuapp.com',
+  REST_STANDARIZATION: 'https://healthtracker-fhir.herokuapp.com',
 };
 
 /*

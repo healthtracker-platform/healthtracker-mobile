@@ -6,27 +6,27 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-<ion-content>
+<ion-content fullscreen class="ion-padding">
   <p>
     <ion-segment (ionChange)="segmentChanged($event)" color="secondary" [(ngModel)]="register.value">
       <ion-segment-button value="1">
-        <ion-img width="60" height="60" src="../../assets/crying-face-svgrepo-com.svg"></ion-img>
+        <ion-img width="40" height="40" src="../../assets/crying-face-svgrepo-com.svg"></ion-img>
         <ion-label>Very sad</ion-label>
       </ion-segment-button>
       <ion-segment-button value="2">
-        <ion-img width="60" height="60" src="../../assets/worried-face-svgrepo-com.svg"></ion-img>
+        <ion-img width="40" height="40" src="../../assets/worried-face-svgrepo-com.svg"></ion-img>
         <ion-label>Sad</ion-label>
       </ion-segment-button>
       <ion-segment-button value="3">
-        <ion-img width="60" height="60" src="../../assets/neutral-face-svgrepo-com.svg"></ion-img>
+        <ion-img width="40" height="40" src="../../assets/neutral-face-svgrepo-com.svg"></ion-img>
         <ion-label>Middle</ion-label>
       </ion-segment-button>
       <ion-segment-button value="4">
-        <ion-img width="60" height="60" src="../../assets/winking-face-svgrepo-com.svg"></ion-img>
+        <ion-img width="40" height="40" src="../../assets/winking-face-svgrepo-com.svg"></ion-img>
         <ion-label>Happy</ion-label>
       </ion-segment-button>
       <ion-segment-button value="5">
-        <ion-img width="60" height="60" src="../../assets/partying-face-svgrepo-com.svg"></ion-img>
+        <ion-img width="40" height="40" src="../../assets/partying-face-svgrepo-com.svg"></ion-img>
         <ion-label>Very Happy</ion-label>
       </ion-segment-button>
     </ion-segment>
